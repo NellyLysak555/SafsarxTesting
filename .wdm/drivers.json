@@ -1,0 +1,10 @@
+{
+    "win64_chromedriver_130.0.6723.91_for_130.0.6723": {
+        "timestamp": "31/10/2024",
+        "binary_path": "D:\\DemoBlaze\\.wdm\\drivers\\chromedriver\\win64\\130.0.6723.91\\chromedriver-win32/chromedriver.exe"
+    },
+    "win64_chromedriver_130.0.6723.116_for_130.0.6723": {
+        "timestamp": "17/11/2024",
+        "binary_path": "D:\\DemoBlaze\\.wdm\\drivers\\chromedriver\\win64\\130.0.6723.116\\chromedriver-win32/chromedriver.exe"
+    }
+}
