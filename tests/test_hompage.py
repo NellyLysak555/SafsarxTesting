@@ -10,6 +10,8 @@ def Is_clickable(btn):
         return True
     except ElementNotInteractableException:
         return False
+def Try_Pull():
+    print("hello")
 
 
 # def test_edit(driver): //בדיקה שאפשר לעשות עריכה בעמוד של החשבון - צריך אימות טלפון
