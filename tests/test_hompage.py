@@ -23,6 +23,8 @@ def Is_clickable(btn):
 
 
 
+
+
 def test_login(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
     driver.get(base_url)
