@@ -11,7 +11,8 @@ def Is_clickable(btn):
     except ElementNotInteractableException:
         return False
 
-
+def Test_me():
+    print("ggf")
 
 # def test_edit(driver): //בדיקה שאפשר לעשות עריכה בעמוד של החשבון - צריך אימות טלפון
 #     base_url = "https://portal-dev.safsarglobal.link/"
