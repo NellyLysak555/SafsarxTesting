@@ -12,6 +12,7 @@ def Is_clickable(btn):
         return False
 
 
+
 # def test_edit(driver): //בדיקה שאפשר לעשות עריכה בעמוד של החשבון - צריך אימות טלפון
 #     base_url = "https://portal-dev.safsarglobal.link/"
 #     driver.get(base_url)
