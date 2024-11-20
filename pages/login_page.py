@@ -4,18 +4,8 @@ from .base_page import BasePage
 
 class LoginPage(BasePage):
 
-    USERNAME_FIELD=(By.ID, "username")
-    PASSWORD_FIELD=(By.ID,"password")
-    LOGIN_BUTTON= (By.ID,"submit")
+    signup_btn=(By.XPATH,'//*[@id="root"]/main/div/div[2]/div/div/p[2]/a')
+    gmail_btn=(By.XPATH,'//*[@id="root"]/main/div/div[2]/div/div/div/button[1]/img')
 
-
-    def enter_username(self,username):
-        self.enter_text(self.USERNAME_FIELD, username)
-
-
-    def enter_password(self,password):
-        self.enter_text(self.PASSWORD_FIELD, password)
-
-
-    def click_login(self):
-        self.click_element(self.LOGIN_BUTTON)
+    def click_signup(self):
+        self.click_element(self.signup_btn)

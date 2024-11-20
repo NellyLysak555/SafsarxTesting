@@ -4,7 +4,15 @@
         "binary_path": "D:\\DemoBlaze\\.wdm\\drivers\\chromedriver\\win64\\130.0.6723.91\\chromedriver-win32/chromedriver.exe"
     },
     "win64_chromedriver_130.0.6723.116_for_130.0.6723": {
-        "timestamp": "17/11/2024",
-        "binary_path": "D:\\DemoBlaze\\.wdm\\drivers\\chromedriver\\win64\\130.0.6723.116\\chromedriver-win32/chromedriver.exe"
+        "timestamp": "18/11/2024",
+        "binary_path": "D:\\SafsarXtesting\\.wdm\\drivers\\chromedriver\\win64\\130.0.6723.116\\chromedriver-win32/chromedriver.exe"
+    },
+    "win64_chromedriver_131.0.6778.69_for_131.0.6778": {
+        "timestamp": "18/11/2024",
+        "binary_path": "D:\\SafsarXtesting\\.wdm\\drivers\\chromedriver\\win64\\131.0.6778.69\\chromedriver-win32/chromedriver.exe"
+    },
+    "win64_chromedriver_131.0.6778.85_for_131.0.6778": {
+        "timestamp": "20/11/2024",
+        "binary_path": "D:\\SafsarXtesting\\.wdm\\drivers\\chromedriver\\win64\\131.0.6778.85\\chromedriver-win32/chromedriver.exe"
     }
 }
