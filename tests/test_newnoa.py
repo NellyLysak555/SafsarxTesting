@@ -82,8 +82,6 @@ def test_link_how(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.how_title))
     title_text = hp.get_how_title()
     assert "איך זה עובד" in title_text
-    driver.close()
-    driver.quit()
 
 
 def test_link_questions(driver):
@@ -95,8 +93,6 @@ def test_link_questions(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.questions_title))
     title_text = hp.get_questions_title()
     assert "שאלות ותשובות" in title_text
-    driver.close()
-    driver.quit()
 
 def test_link_ticket_sales(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
@@ -117,6 +113,8 @@ def test_link_contactus(driver):
     hp = Hp(driver)
     WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.contactus_link))
     hp.click_contactus_link()
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.contactus_title))
+    title_text = hp.get_contactus_title()
     driver.close()
     driver.quit()
 
