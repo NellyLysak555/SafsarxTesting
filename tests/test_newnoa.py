@@ -82,8 +82,6 @@ def test_link_how(driver):
     title_text = hp.get_how_title()
     assert "איך זה עובד" in title_text
 
-
-
 def test_link_questions(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
     driver.get(base_url)
