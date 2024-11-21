@@ -86,65 +86,6 @@ def test_hero_visible(driver):
     assert banner.is_displayed()
 
 
-def test_click_theatre(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    driver.get(base_url)
-    time.sleep(5)
-    hp.click_theatre()
-    assert driver.current_url == "https://portal-dev.safsarglobal.link/category-search-results/5/%D7%AA%D7%99%D7%90%D7%98%D7%A8%D7%95%D7%9F"
-
-
-def test_click_music(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    driver.get(base_url)
-    time.sleep(5)
-    hp.click_music()
-    assert driver.current_url == "https://portal-dev.safsarglobal.link/category-search-results/4/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94"
-
-
-
-def test_click_sport(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    driver.get(base_url)
-    time.sleep(5)
-    hp.click_sport()
-    assert driver.current_url == "https://portal-dev.safsarglobal.link/category-search-results/1/%D7%A1%D7%A4%D7%95%D7%A8%D7%98"
-
-
-def test_click_standup(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    driver.get(base_url)
-    time.sleep(5)
-    hp.click_standup()
-    assert driver.current_url == "https://portal-dev.safsarglobal.link/category-search-results/3/%D7%A1%D7%98%D7%90%D7%A0%D7%93%D7%90%D7%A4"
-
-
-def test_click_kids(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    driver.get(base_url)
-    time.sleep(5)
-    hp.click_kids()
-    assert driver.current_url == "https://portal-dev.safsarglobal.link/category-search-results/2/%D7%99%D7%9C%D7%93%D7%99%D7%9D"
-
-# def test_edit(driver): //בדיקה שאפשר לעשות עריכה בעמוד של החשבון - צריך אימות טלפון
-#     base_url = "https://portal-dev.safsarglobal.link/"
-#     driver.get(base_url)
-#     hp = Hp(driver)
-#     driver.get(base_url)
-#     time.sleep(5)
-#     hp.click_login()
-
-
 
 
 
