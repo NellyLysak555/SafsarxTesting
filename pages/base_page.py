@@ -1,5 +1,7 @@
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
@@ -9,6 +11,7 @@ class BasePage:
 
     def find_element(self,locator):  #change to wait
         return self.driver.find_element(*locator)
+
 
     def find_elements(self,locator):
         return self.driver.find_elements(*locator)
@@ -23,3 +26,6 @@ class BasePage:
         element=self.find_element(locator)
         element.clear()
         element.send_keys(text)
+
+
+
