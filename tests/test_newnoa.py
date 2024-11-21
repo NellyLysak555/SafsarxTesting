@@ -37,7 +37,7 @@ def test_category_sports(driver):
     WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.sports_category))
     hp.click_sports_category()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.sports_title))
-    title_text = hp.sports_title()
+    title_text = hp.get_sports_title()
     assert "ספורט" in title_text
 
 def test_category_standup(driver):

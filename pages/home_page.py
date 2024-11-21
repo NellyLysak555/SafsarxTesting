@@ -95,7 +95,6 @@ class HomePage(BasePage):
     def get_sports_title(self):
         return self.find_element(self.sports_title).text
 
-
     def click_standup_category(self):
         self.click_element(self.standup_category)
 
