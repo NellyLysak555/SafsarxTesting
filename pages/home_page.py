@@ -54,7 +54,7 @@ class HomePage(BasePage):
     accessibility_link = (By.XPATH, "(//a[contains(text(),'הצהרת נגישות')])[1]")
     accessibility_title = (By.XPATH, "(//h1[contains(text(),'הצהרת נגישות')])[1]")
 
-    learn_more_about_us_button = (By.XPATH, "(//a[contains(text(),'למדו עוד עלינו'')])[1]")
+    learn_more_about_us_button = (By.XPATH, "(//a[contains(text(),'למדו עוד עלינו')])[1]")
     learn_more_about_us_title = (By.XPATH, "(//h1[contains(text(),'מי אנחנו')])[1]")
 
 

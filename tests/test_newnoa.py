@@ -177,7 +177,7 @@ def test_button_learn_more_about_us(driver):
     hp.click_learn_more_about_us_button()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.learn_more_about_us_title))
     title_text = hp.get_learn_more_about_us_title()
-    assert "מי אנחנו'" in title_text
+    assert "מי אנחנו" in title_text
     driver.close()
     driver.quit()
 
