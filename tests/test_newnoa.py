@@ -70,8 +70,7 @@ def test_link_who(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.who_title))
     title_text = hp.get_who_title()
     assert "מי אנחנו" in title_text
-    driver.close()
-    driver.quit()
+
 
 def test_link_how(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
@@ -82,6 +81,7 @@ def test_link_how(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.how_title))
     title_text = hp.get_how_title()
     assert "איך זה עובד" in title_text
+
 
 
 def test_link_questions(driver):
@@ -103,8 +103,6 @@ def test_link_ticket_sales(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.ticket_sales_title))
     title_text = hp.get_ticket_sales_title()
     assert "מכירת כרטיסים" in title_text
-    driver.close()
-    driver.quit()
 
 
 def test_link_contactus(driver):
@@ -116,8 +114,8 @@ def test_link_contactus(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.contactus_logo))
     logo_element = hp.get_contactus_logo()
     assert logo_element.is_displayed
-    driver.close()
-    driver.quit()
+
+
 
 
 def test_link_terms(driver):
@@ -129,8 +127,7 @@ def test_link_terms(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.terms_title))
     title_text = hp.get_terms_title()
     assert "תנאי שימוש" in title_text
-    driver.close()
-    driver.quit()
+
 
 def test_link_privacy_policy(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
@@ -141,8 +138,7 @@ def test_link_privacy_policy(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.privacy_policy_title))
     title_text = hp.get_privacy_policy_title()
     assert "מדיניות פרטיות" in title_text
-    driver.close()
-    driver.quit()
+
 
 def test_link_cancellation_policy(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
@@ -153,8 +149,6 @@ def test_link_cancellation_policy(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.cancellation_policy_title))
     title_text = hp.get_cancellation_policy_title()
     assert "מדיניות ביטולים" in title_text
-    driver.close()
-    driver.quit()
 
 def test_link_accessibility(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
@@ -165,8 +159,7 @@ def test_link_accessibility(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.accessibility_title))
     title_text = hp.get_accessibility_title()
     assert "הצהרת נגישות" in title_text
-    driver.close()
-    driver.quit()
+
 
 def test_button_learn_more_about_us(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
@@ -177,8 +170,6 @@ def test_button_learn_more_about_us(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.learn_more_about_us_title))
     title_text = hp.get_learn_more_about_us_title()
     assert "מי אנחנו" in title_text
-    driver.close()
-    driver.quit()
 
 
 
