@@ -85,6 +85,15 @@ def test_hero_visible(driver):
     banner=hp.find_element(hp.hero_banner)
     assert banner.is_displayed()
 
+def test_event_homepage(driver):
+    base_url = "https://portal-dev.safsarglobal.link/"
+    driver.get(base_url)
+    hp = Hp(driver)
+    driver.get(base_url)
+    time.sleep(5)
+    hp.click_event()
+    assert driver.current_url == "https://portal-dev.safsarglobal.link/event/93"
+
 
 
 
