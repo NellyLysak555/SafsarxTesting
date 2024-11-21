@@ -113,8 +113,9 @@ def test_link_contactus(driver):
     hp = Hp(driver)
     WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.contactus_link))
     hp.click_contactus_link()
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.contactus_title))
-    title_text = hp.get_contactus_title()
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(hp.contactus_logo))
+    logo_element = hp.get_contactus_logo()
+    assert logo_element.is_displayed
     driver.close()
     driver.quit()
 

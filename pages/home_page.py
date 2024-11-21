@@ -40,7 +40,7 @@ class HomePage(BasePage):
     ticket_sales_title = (By.XPATH, "(//h1[contains(text(),'מכירת כרטיסים')])[1]")
 
     contactus_link = (By.XPATH, "(//a[contains(text(),'צרו קשר')])[1]")
-    contactus_title = (By.XPATH, "(//img[@alt='Contact Us Icon'])[1]")
+    contactus_logo = (By.XPATH, "(//img[@alt='Contact Us Icon'])[1]")
 
     terms_link = (By.XPATH, "(//a[contains(text(),'תנאי שימוש')])[1]")
     terms_title = (By.XPATH, "(//h1[contains(text(),'תנאי שימוש')])[1]")
@@ -134,8 +134,8 @@ class HomePage(BasePage):
     def click_contactus_link(self):
         self.click_element(self.contactus_link)
 
-    def get_contactus_title(self):
-        return self.find_element(self.contactus_title).text
+    def get_contactus_logo(self):
+        return self.find_element(self.contactus_logo)
 
 
     def click_terms_link(self):
