@@ -95,9 +95,24 @@ def test_event_homepage(driver):
     assert driver.current_url == "https://portal-dev.safsarglobal.link/event/93"
 
 
+def test_facebook(driver): #בדיקה לחיצה על הופעה דרך קטגוריה
+    base_url = "https://portal-dev.safsarglobal.link/"
+    driver.get(base_url)
+    hp = Hp(driver)
+    driver.get(base_url)
+    time.sleep(5)
+    hp.click_element((By.XPATH, "/html/body/div/div[2]/div[5]/div/div[2]/div[2]/li/a[2]/img"))
+    assert driver.current_url == "https://www.facebook.com/people/%D7%A1%D7%A4%D7%A1%D7%A8-%D7%90%D7%99%D7%A7%D7%A1/pfbid02NWCsH5e1aeFfGiRuUZJyZM7Lom6ojAnSGterZixjQs6B76291ae2pm13F5TubUBvl/"
 
 
-
+def test_enter_instagram(driver): #בדיקה לחיצה על אינסטגרם
+    base_url = "https://portal-dev.safsarglobal.link/"
+    driver.get(base_url)
+    hp = Hp(driver)
+    driver.get(base_url)
+    time.sleep(5)
+    hp.click_element((By.XPATH, "/html/body/div/div[2]/div[5]/div/div[2]/div[2]/li/a[2]/img"))
+    assert driver.current_url == "https://www.instagram.com/safsarx/"
 
 
 
