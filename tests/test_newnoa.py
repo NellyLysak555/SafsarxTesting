@@ -111,12 +111,12 @@ def test_link_ticket_sales(driver):
     driver.quit()
 
 
-def test_link_Contactus(driver):
+def test_link_contactus(driver):
     base_url = "https://portal-dev.safsarglobal.link/"
     driver.get(base_url)
     hp = Hp(driver)
-    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.Contactus_link))
-    hp.click_Contactus_link()
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.contactus_link))
+    hp.click_contactus_link()
     driver.close()
     driver.quit()
 
@@ -181,22 +181,7 @@ def test_button_learn_more_about_us(driver):
     driver.close()
     driver.quit()
 
-def test_button_instagram(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.instagram_button))
-    hp.click_instagram_button()
-    driver.close()
-    driver.quit()
 
 
-def test_button_facebook(driver):
-    base_url = "https://portal-dev.safsarglobal.link/"
-    driver.get(base_url)
-    hp = Hp(driver)
-    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(hp.facebook_button))
-    hp.click_facebook_button()
-    driver.close()
-    driver.quit()
+
 

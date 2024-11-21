@@ -39,8 +39,8 @@ class HomePage(BasePage):
     ticket_sales_link = (By.XPATH, "(//a[@href='/ticket-sales'])[1]")
     ticket_sales_title = (By.XPATH, "(//h1[contains(text(),'מכירת כרטיסים')])[1]")
 
-    Contactus_link = (By.XPATH, "(//a[contains(text(),'צרו קשר')])[1]")
-    Contactus_title = (By.XPATH, "(//img[@alt='Contact Us Icon'])[1]")
+    contactus_link = (By.XPATH, "(//a[contains(text(),'צרו קשר')])[1]")
+    contactus_title = (By.XPATH, "(//img[@alt='Contact Us Icon'])[1]")
 
     terms_link = (By.XPATH, "(//a[contains(text(),'תנאי שימוש')])[1]")
     terms_title = (By.XPATH, "(//h1[contains(text(),'תנאי שימוש')])[1]")
@@ -57,11 +57,6 @@ class HomePage(BasePage):
     learn_more_about_us_button = (By.XPATH, "(//a[contains(text(),'למדו עוד עלינו'')])[1]")
     learn_more_about_us_title = (By.XPATH, "(//h1[contains(text(),'מי אנחנו')])[1]")
 
-    instagram_button = (By.XPATH, "(//img[@alt='instagram'])[1]")
-    instagram_title = (By.XPATH, "(//h1[contains(text(),'מי אנחנו')])[1]")
-
-    facebook_button = (By.XPATH, "(//img[@alt='facebook'])[1]")
-    facebook_title = (By.XPATH, "(//h1[contains(text(),'מי אנחנו')])[1]")
 
 
     def click_music(self):
@@ -137,11 +132,11 @@ class HomePage(BasePage):
     def get_ticket_sales_title(self):
         return self.find_element(self.ticket_sales_title).text
 
-    def click_Contactus_link(self):
-        self.click_element(self.Contactus_link)
+    def click_contactus_link(self):
+        self.click_element(self.contactus_link)
 
-    def get_Contactus_title(self):
-        return self.find_element(self.Contactus_title).text
+    def get_contactus_title(self):
+        return self.find_element(self.contactus_title).text
 
 
     def click_terms_link(self):
@@ -174,16 +169,5 @@ class HomePage(BasePage):
     def get_learn_more_about_us_title(self):
         return self.find_element(self.learn_more_about_us_title).text
 
-    def click_instagram_button(self):
-        self.click_element(self.instagram_button)
 
-    def get_instagram_us_title(self):
-        return self.find_element(self.instagram_title).text
-
-
-    def click_facebook_button(self):
-        self.click_element(self.facebook_button)
-
-    def get_facebook_title(self):
-        return self.find_element(self.facebook_title).text
 
